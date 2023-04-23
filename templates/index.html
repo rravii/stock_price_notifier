@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Stock Alert</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        color: #0099cc;
+        text-align: center;
+        margin-top: 30px;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+      label {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      select,
+      input[type="email"],
+      input[type="tel"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+      button[type="submit"] {
+        background-color: #0099cc;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #0077b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stock Alert</h1>
+    <form method="post" action="/">
+      <label for="ticker">Ticker Symbol:</label>
+      <input type="text" id="ticker" name="ticker" required>
+      <label for="threshold">Price Threshold:</label>
+      <input type="text" id="threshold" name="threshold" required>
+      <label for="frequency">Frequency:</label>
+      <select id="frequency" name="frequency">
+        <option value="minute">Every minute</option>
+        <option value="hourly">Hourly</option>
+        <option value="daily">Daily</option>
+      </select>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="notification_type">Notification Type:</label>
+      <select id="notification_type" name="notification_type">
+        <option value="email">Email</option>
+        <option value="text">Text Message</option>
+      </select>
+      <button type="submit">Create Alert</button>
+    </form>
+  </body>
+</html>
