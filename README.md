@@ -15,6 +15,9 @@
   python run.py
 ```
 
+### [Documentation](https://docs.google.com/document/d/1l5z2R83qziqy1e-Es5tS6jb-RXd4-fey/edit?usp=sharing&ouid=108044631561998143868&rtpof=true&sd=true)
+
+
 ## Output:
 - Running code:
 
@@ -35,4 +38,5 @@
 
 - Notification in Mobile:
 
-![Phone](https://raw.githubusercontent.com/rravii/stock_price_notifier/master/images/5.png)
+<img height="600" src="https://raw.githubusercontent.com/rravii/stock_price_notifier/master/images/5.png"> 
+
