@@ -1,4 +1,4 @@
-# stock_price_notifier
+# Stock Price Notifier
 
 ## Steps to run the code:
 
